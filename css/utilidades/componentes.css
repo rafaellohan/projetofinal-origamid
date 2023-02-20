@@ -1,25 +1,26 @@
 .container {
+  box-sizing: border-box;
   max-width: 1200px;
   padding-left: 20px;
   padding-right: 20px;
-  box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
 }
 
 .botao {
-  padding: 16px 32px;
-  background: linear-gradient(#ffbb00, #ffbf00, #f2a50c);
   display: inline-block;
+  padding: 16px 32px;
+  background: linear-gradient(#ffbf00, #f2a50c);
   border-radius: 4px;
-  color: var(--cor-p5);
-  font-size: 18px;
-  line-height: 1.33;
-  text-transform: uppercase;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  font-family: "Poppins";
-  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--cor-p5);
+  font: 600 1.125rem/1.35 "Poppins", sans-serif;
   max-width: max-content;
+}
+
+.botao:hover {
+  background: linear-gradient(#ffb60d, #e59317);
 }
 
 .botao.secundario {
@@ -42,12 +43,19 @@
   width: 18px;
   height: 10px;
   margin-left: 12px;
-  background: url(../../img/icones/seta.svg);
-  transition: 0.2s;
+  background: url("../../img/icones/seta.svg");
+  transition: transform 0.2s;
 }
 
 .botao.seta:hover::after {
   transform: translateX(4px);
+}
+
+@media (max-width: 600px) {
+  .botao {
+    padding: 12px 16px;
+    font-size: 1rem;
+  }
 }
 
 .link {
@@ -69,21 +77,11 @@
   color: var(--cor-0);
 }
 
-.botao:hover {
-  background: linear-gradient(#ffb60d, #e59317);
-}
-
-@media (max-width: 600px) {
-  .botao {
-    padding: 12px 16px;
-    font-size: 16px;
-  }
-}
-
+/* titulo internas */
 .titulo-bg {
-  background-color: var(--cor-11);
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: var(--cor-11);
 }
 
 .titulo p {
