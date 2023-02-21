@@ -1,6 +1,7 @@
 body {
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
+  color: #111111;
 }
 
 h1,
@@ -8,25 +9,25 @@ h2,
 h3,
 h4,
 ul,
+p,
 blockquote,
-dd,
-p {
-  margin: 0;
+dd {
+  margin: 0px;
 }
 
 ul {
-  margin: 0px;
   padding: 0px;
   list-style: none;
 }
 
 a {
   text-decoration: none;
-  color: inherit; /*herda o conteudo do pai (cor branca)*/
+  color: inherit;
 }
 
 img {
   max-width: 100%;
+  height: auto;
   display: block;
 }
 

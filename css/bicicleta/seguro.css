@@ -35,12 +35,9 @@
   .seguro {
     grid-template-columns: 1fr;
   }
-  .seguro-imagem {
-    height: 200px;
-  }
   .seguro-conteudo {
     grid-row: 1;
     padding-top: 40px;
-    padding-bottom: 0;
+    padding-bottom: 0px;
   }
 }
