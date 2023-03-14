@@ -37,3 +37,7 @@
 
 /* Termos */
 @import "./termos/termos.css";
+
+/*  Animações  */
+
+@import "./utilidades/animacao.css";
